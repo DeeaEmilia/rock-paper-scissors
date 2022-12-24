@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(../assets/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Macando";
+  src: url(../assets/Macondo-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "OpenSans", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+}
+
+:root {
+  --primary-color: #FD8A29;
+  --dark-color: #4b4b4b;
+  --light-color: #f4f4f4;
+  --lose-color: #f04254;
+  --win-color: #047c4e;
+  --modal-duration: 0.5s;
+}
+
+body {
+  background-color: #FFBEA7;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+}
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.restart-btn {
+  display: none;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+.restart-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  color: #fff;
+}
+.score p:first-child {
+  background: var(--primary-color);
+}
+.score p:last-child {
+  background: var(--dark-color);
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 3rem 0;
+  padding: 3rem;
+  text-align: center;
+}
+.choices .choice {
+  cursor: pointer;
+}
+.choices .choice:hover {
+  color: var(--primary-color);
+}
+
+.text-win {
+  color: var(--win-color);
+}
+
+.text-lose {
+  color: var(--lose-color);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.wrapper .container {
+  width: 300px;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) scale(0.7);
+  transition: 0.5s all ease;
+  overflow: hidden;
+}
+.wrapper .container:hover {
+  transform: rotateX(0deg) scale(1) translateY(10px);
+}
+
+@media (max-width: 700px) {
+  .choice {
+    font-size: 110px;
+  }
+}
+@media (max-width: 500px) {
+  .choice {
+    font-size: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */

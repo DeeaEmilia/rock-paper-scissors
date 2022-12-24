@@ -1,0 +1,32 @@
+//reset styles
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../assets/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Macando';
+    src: url(../assets/Macondo-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'OpenSans', sans-serif;
+
+    background-color: #f4f4f4;
+    color: #4b4b4b;
+}
+
+:root {
+    --primary-color: #FD8A29;
+    --dark-color: #4b4b4b;
+    --light-color: #f4f4f4;
+    --lose-color: #f04254;
+    --win-color: #047c4e;
+    --modal-duration: 0.5s;
+}

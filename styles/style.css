@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(../assets/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Macando";
+  src: url(../assets/Macondo-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "OpenSans", sans-serif;
+  background-color: #f4f4f4;
+  color: #4b4b4b;
+}
+
+:root {
+  --primary-color: #FD8A29;
+  --dark-color: #4b4b4b;
+  --light-color: #f4f4f4;
+  --lose-color: #f04254;
+  --win-color: #047c4e;
+  --modal-duration: 0.5s;
+}
+
+body {
+  background-color: #FFBEA7;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+}
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.restart-btn {
+  display: none;
+  background: var(--light-color);
+  color: var(--dark-color);
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.restart-btn:hover {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+.score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  color: var(--light-color);
+}
+.score p:first-child {
+  background: var(--primary-color);
+}
+.score p:last-child {
+  background: var(--dark-color);
+}
+
+.choices {
+  display: grid;
+  grid-gap: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.choices .choice {
+  cursor: pointer;
+}
+.choices .choice:hover {
+  color: var(--primary-color);
+}
+
+.text-win {
+  color: var(--win-color);
+}
+
+.text-lose {
+  color: var(--lose-color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.wrapper .container {
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) scale(0.7);
+  transition: 0.5s all ease;
+}
+.wrapper .container:hover {
+  transform: rotateX(0deg) scale(1) translateY(10px);
+}
+
+@media (max-width: 700px) {
+  .choice {
+    font-size: 110px;
+  }
+}
+@media (max-width: 500px) {
+  .choice {
+    font-size: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */

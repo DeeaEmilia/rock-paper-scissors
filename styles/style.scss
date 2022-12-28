@@ -43,6 +43,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.2rem;
     color: var(--light-color);
+    padding: 3px;
 
     p:first-child {
         background: var(--primary-color);
